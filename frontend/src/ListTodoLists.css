@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Soft gradient background */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Main container */
+.ListToDoLists {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.ListToDoLists:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+/* Heading */
+.ListToDoLists h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+}
+
+/* Box for adding a new to-do list */
+.ListToDoLists .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.ListToDoLists .box label {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.ListToDoLists .box input {
+  padding: 0.8em;
+  font-size: 1.1em;
+  width: 60%;
+  max-width: 350px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+.ListToDoLists .box input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.ListToDoLists .box button {
+  background: linear-gradient(45deg, #4CAF50, #45a049);
+  color: white;
+  font-size: 1.2em;
+  padding: 0.8em 2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.ListToDoLists .box button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* To-Do List Summary */
+.ListToDoLists .summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.2em;
+  margin: 1em 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Card-like shadow */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.ListToDoLists .summary:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background-color: #f4f4f4;
+}
+
+.ListToDoLists .name {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #333;
+}
+
+.ListToDoLists .count {
+  font-size: 1.1em;
+  color: #777;
+  font-weight: 400;
+}
+
+.ListToDoLists .trash {
+  font-size: 1.8em;
+  color: #ff4040;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.ListToDoLists .trash:hover {
+  color: #ff0000;
+}
+
+/* Loading state */
+.ListToDoLists .loading {
+  text-align: center;
+  font-size: 1.5em;
+  color: #555;
+  font-weight: 500;
+}
+
+/* No to-do list message */
+.ListToDoLists p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  font-weight: 500;
+}

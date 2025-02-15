@@ -1,0 +1,122 @@
+/* /* .ToDoList .back {
+    margin: 0 1em;
+    padding: 1em;
+    float: left;
+  }
+  
+  .ToDoList .item {
+    border: 1px solid lightgray;
+    padding: 1em;
+    margin: 1em;
+    cursor: pointer;
+    display: flex;
+  }
+  
+  .ToDoList .label {
+    margin-left: 1ex;
+  }
+  
+  .ToDoList .checked .label {
+    text-decoration: line-through;
+    color: lightgray;
+  } */
+
+  /* Back button style */
+/* Back button style */
+.ToDoList .back {
+  margin: 1em;
+  padding: 1em;
+  background-color: #3b82f6;  /* Soft blue */
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Hover effect for back button */
+.ToDoList .back:hover {
+  background-color: #2563eb; /* Darker blue */
+  transform: scale(1.05); /* Slight scale up */
+}
+
+/* Item card style */
+.ToDoList .item {
+  border: 1px solid #e2e8f0;  /* Light gray border */
+  border-radius: 10px;  /* Rounded corners */
+  padding: 1.2em;
+  margin: 1em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for floating effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for items */
+.ToDoList .item:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+/* Label text styling */
+.ToDoList .label {
+  margin-left: 1ex;
+  font-size: 1.1rem;
+  color: #333;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Striked-through label for checked items */
+.ToDoList .checked .label {
+  text-decoration: line-through;
+  color: #9ca3af;  /* Light gray color for checked items */
+}
+
+/* Striking through and hover effect for checked items */
+.ToDoList .checked:hover {
+  background-color: #f3f4f6; /* Light gray background for checked items */
+  cursor: not-allowed; /* Disable hover effect for checked items */
+}
+
+/* Button to mark item as done or delete with icons */
+.ToDoList .button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.ToDoList .button-wrapper .button {
+  margin-left: 0.5em;
+  background: #4CAF50;  /* Green color */
+  color: white;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+.ToDoList .button-wrapper .button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Hover effect for delete button */
+.ToDoList .button-wrapper .delete {
+  background: #ff4040; /* Red background */
+  margin-left: 0.5em;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for delete button */
+.ToDoList .button-wrapper .delete:hover {
+  background-color: #ff0000;
+  transform: scale(1.05); /* Slight scale on hover */
+}
